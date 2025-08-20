@@ -1,0 +1,10 @@
+python manage.py runserver 9000
+python manage.py makemigrations
+python manage.py startapp <app name>
+
+python3 manage.py migrate
+python3 manage.py sqlmigrate store 0001
+
+sequel ==> sql
+
+python3 manage migrate <app name> <migration index>
