@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "store",
     "tags",
-    "likes"
+    "likes",
 ]
 
 MIDDLEWARE = [
@@ -82,10 +82,24 @@ WSGI_APPLICATION = "storefront.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+
+######## Default databases
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
+
+
+######## Mysql databases
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "django-learning",
+        "HOST": "127.0.0.1",
+        "USER": "django",
+        "PASSWORD": "MysqlDj@ang0P@ssw0rd1234",
     }
 }
 
@@ -108,9 +122,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-INTERNAL_IPS = [
-    '127.0.0.1'
-]
+INTERNAL_IPS = ["127.0.0.1"]
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
