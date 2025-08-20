@@ -93,16 +93,26 @@ WSGI_APPLICATION = "storefront.wsgi.application"
 
 
 ######## Mysql databases
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.mysql",
+#         "NAME": "django-learning",
+#         "HOST": "127.0.0.1",
+#         "USER": "django",
+#         "PASSWORD": "MysqlDj@ang0P@ssw0rd1234",
+#     }
+# }
+
+######## Postgres databases
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": "django-learning",
         "HOST": "127.0.0.1",
         "USER": "django",
-        "PASSWORD": "MysqlDj@ang0P@ssw0rd1234",
+        "PASSWORD": "P0stgErsp@sSw0rd1234",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators

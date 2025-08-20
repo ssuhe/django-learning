@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: MysqlRo0tP@ssw0rd1234
+      MYSQL_USER: django
+      MYSQL_PASSWORD: MysqlDj@ang0P@ssw0rd1234
+      MYSQL_DATABASE: django-learning
