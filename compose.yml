@@ -1,7 +1,4 @@
-# Use root/example as user/password credentials
-
 services:
-
   db:
     image: mysql
     restart: always
@@ -12,4 +9,3 @@ services:
       MYSQL_USER: django
       MYSQL_PASSWORD: MysqlDj@ang0P@ssw0rd1234
       MYSQL_DATABASE: django-learning
-    # (this is just an example, not intended to be a production configuration)
